@@ -7,12 +7,20 @@ This is the script for continuous slide attacks (can be toggled on and off), des
 hotkeys:
 
 &#96; (the tilda key above tab): toggle the auto-slide attacks on and off.
+
 ]: increase attack speed. feel free to mash this, as a limit is in place to prevent it from attacking faster than the weapon can handle
+
 [: decrease attack speed. also has a limiter in place
 
+
 jumpAttack.ahk
+
 This is the script for a continuous jump-attack specifically designed for the Ohma modded with Berserker. Given this weapon's devastating capabilities when jump-attacking, this was worth making, but doesn't have much use outside of Ohma thus far. As with autoSlide.ahk, you can toggle it on and off as well as increase or decrease the frequency of attack execution depending on the amount of berserker stacks. 
+
 hotkeys:
+
 &#96; (tilda key above tab): toggle auto-attacks on or off
+
 +: increase attack speed. feel free to mash this, as a limit is in place to prevent it from attacking faster than the weapon can handle
+
 -: decrease attack speed. also has a limiter in place

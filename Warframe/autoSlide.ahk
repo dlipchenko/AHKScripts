@@ -58,3 +58,9 @@ return
 	Send, {shift up} 
 	Send, {w up} 
 return
+
++-::
+Send, %delayTimer%
+	Send, {shift down} 
+return
+

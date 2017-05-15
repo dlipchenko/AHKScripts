@@ -25,7 +25,8 @@ DISCLAIMER: Use this at your own risk. I've optimized the script to be as safe a
 
 When you run the script, you will get a GUI with a bunch of checkboxes and a slider. <br />
 The 6 checkboxes at the top of the GUI represent the 6 visible items that you see when you open the foundry. So in order to craft items, you simply navigate through your foundry until they are present on the screen, then check off the corresponding checkbox(es) in the GUI. The following screenshot indicates the correlation:<br />
-![alt text](https://raw.githubusercontent.com/dlipchenko/AHKScripts/master/Warframe/autoCrafterGUI.png)
-The slider enables you to choose how many times you wish for the script to craft the item in question. If you want it to run until you've depleted your resources, just check off the "infinite" checkbox.<br /><br />
+![alt text](https://raw.githubusercontent.com/dlipchenko/AHKScripts/master/Warframe/autoCrafterGUI.png)<br />
+note: you can select more than 1 checkbox, and it will craft everything you select.</br >
+The slider enables you to choose how many times you wish for the script to craft the item in question. If you want it to run until you've depleted your resources, just check off the "infinite" checkbox. If you want to run it just a specific amount of times, leave the checkbox unchecked, and use the slider to indicate how many you want to run.<br /><br />
 
 As I mentioned in the disclaimer above, I will not be held responsible for any loss of plat or other damages, and I will not compensate you either. As such, I recommend that you supervise the automation for the first few runs to ensure that it runs smoothly.

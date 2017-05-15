@@ -29,4 +29,6 @@ The 6 checkboxes at the top of the GUI represent the 6 visible items that you se
 note: you can select more than 1 checkbox, and it will craft everything you select.</br >
 The slider enables you to choose how many times you wish for the script to craft the item in question. If you want it to run until you've depleted your resources, just check off the "infinite" checkbox. If you want to run it just a specific amount of times, leave the checkbox unchecked, and use the slider to indicate how many you want to run.<br /><br />
 
+Once you've set the GUI to do what you want, tab back into the game, make sure you're looking at the foundry (and that the items in the foundry align with the checkboxes of the GUI) and hit &#96; (tilda key above tab) to start the automation. If you want to turn it off, hit the same key again, but once you do let it complete its current action.<br /><br />
+
 As I mentioned in the disclaimer above, I will not be held responsible for any loss of plat or other damages, and I will not compensate you either. As such, I recommend that you supervise the automation for the first few runs to ensure that it runs smoothly.

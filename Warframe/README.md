@@ -5,9 +5,9 @@ This is the script for continuous slide attacks (can be toggled on and off), des
 
 I have also modified this script in such a way that allows hands-off movement. This is a mode which I will call the "afk mode" from here on out. If this is toggled off, you will just have a continuous sprint-slide-attack movement as per the old script, but if you toggle it on, your mouse will move in 180 degrees in the opposite direction after every attack. A couple of notes you should be aware of when using afk mode:<br /> 
 a) this is not extensively tested. The conditions behind my testing were: 1920x1080 screen resolution (and in-game resolution), mouse sensitivity in the game's options is set to 50, and a run-of-the-mill microsoft mouse (i.e. average DPI). I don't know what variations in these conditions will do with the script, so test it out and see if it works. If it doesn't work exactly the way you want it, open the script and play around with the values. What you're looking for are these two lines:<br /> 
-MouseMove, xpos+**18**, ypos, 50<br /> 
-MouseMove, xpos**-18**, ypos, 50<br /> 
-Make the 18 and -18 less or more, but keep them uniform (i.e. 17/-17 or 20/-20).<br /> 
+MouseMove, xpos+**15**, ypos, 50<br /> 
+MouseMove, xpos-**15**, ypos, 50<br /> 
+Make the +15 and -15 less or more, but keep them uniform (i.e. +13/-13 or +17/-17).<br /> 
 b) To get this script to work properly, I had to disable user input for the cursor on the desktop. Not doing this would cause some dark magic to do unexpected things. What this means is that while the slide-attack loop is active, you'll still be able to look-around in-game, and even move the cursor in the game's esc menu, but **you will not have control of your cursor when you've tabbed out of the game** - to regain control, just toggle the auto-slide off and it will release the cursor.<br /> 
 c) This best works if your screen is leveled with the ground (i.e. point your crosshair to at the horizon). Otherwise, the more off-level your camera view is, the more your camera will spin, and the 180 dregree turn becomes bigger. This is not too big a deal, since you should theoretically always return to your point of origin, but if you notice it, now you know why.
 

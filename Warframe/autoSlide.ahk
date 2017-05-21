@@ -1,8 +1,12 @@
 baseSpeedValue = 1150
 delayTimer = %baseSpeedValue%
+ypos = 
+xpos = 
+CoordMode, Mouse, Relative
 
 
 Toggle = 0
+ToggleRound = 0
 #MaxThreadsPerHotkey 3
 
 +]::
@@ -41,26 +45,81 @@ return
 	}
 return
 
+F1::
+ToggleRound := !ToggleRound
+return
+
 +`::
 Toggle := !Toggle
 return
 
 `::
     Toggle := !Toggle
-	Send, {shift down} 
 	Send, {w down} 
-	While Toggle
+	if (ToggleRound = 0)
 	{
-		Sleep, delayTimer 
-		Send, ^e 
+		Send, {shift down} 
+		While Toggle
+		{
+			Sleep, delayTimer 
+			Send, ^e 
+		}
+		Sleep, 50
+		Send, {shift up} 
+		Send, {w up} 
 	}
-	Sleep, 50
-	Send, {shift up} 
-	Send, {w up} 
+	else if (ToggleRound = 1)
+	{	
+		BlockInput, MouseMove
+		While Toggle
+		{
+			
+
+			Sleep, delayTimer 
+			MouseGetPos, xpos, ypos
+			Sleep, 1
+			MouseMove, xpos-18, ypos, 50
+			Send, ^e 
+			if (Toggle = 0)
+			{
+				break
+			}
+			Sleep, delayTimer 
+			MouseGetPos, xpos, ypos
+			Sleep, 1
+			MouseMove, xpos+18, ypos, 50
+			Send, ^e 
+			if (Toggle = 0)
+			{
+				break
+			}
+			Sleep, delayTimer 
+			MouseGetPos, xpos, ypos
+			Sleep, 1
+			MouseMove, xpos+18, ypos, 50
+			Send, ^e 
+			if (Toggle = 0)
+			{
+				break
+			}
+			Sleep, delayTimer 
+			MouseGetPos, xpos, ypos
+			Sleep, 1
+			MouseMove, xpos-18, ypos, 50
+			Send, ^e 
+			if (Toggle = 0)
+			{
+				break
+			}
+		}
+		Sleep, 50
+		BlockInput, MouseMoveOff
+		Send, {shift up} 
+		Send, {w up} 
+	}
 return
 
 +-::
 Send, %delayTimer%
 	Send, {shift down} 
 return
-

@@ -1,3 +1,4 @@
+;note - using this script implies that you have read the disclaimer in the readme.md file located at https://github.com/dlipchenko/AHKScripts/tree/master/Warframe and agree with the conditions I've written there
 toggle = 0
 #MaxThreadsPerHotkey 3
 CoordMode, Mouse, Screen

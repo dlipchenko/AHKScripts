@@ -78,7 +78,7 @@ return
 			Sleep, delayTimer 
 			MouseGetPos, xpos, ypos
 			Sleep, 1
-			MouseMove, xpos-18, ypos, 50
+			MouseMove, xpos-15, ypos, 50
 			Send, ^e 
 			if (Toggle = 0)
 			{
@@ -87,7 +87,7 @@ return
 			Sleep, delayTimer 
 			MouseGetPos, xpos, ypos
 			Sleep, 1
-			MouseMove, xpos+18, ypos, 50
+			MouseMove, xpos+15, ypos, 50
 			Send, ^e 
 			if (Toggle = 0)
 			{
@@ -96,7 +96,7 @@ return
 			Sleep, delayTimer 
 			MouseGetPos, xpos, ypos
 			Sleep, 1
-			MouseMove, xpos+18, ypos, 50
+			MouseMove, xpos+15, ypos, 50
 			Send, ^e 
 			if (Toggle = 0)
 			{
@@ -105,7 +105,7 @@ return
 			Sleep, delayTimer 
 			MouseGetPos, xpos, ypos
 			Sleep, 1
-			MouseMove, xpos-18, ypos, 50
+			MouseMove, xpos-15, ypos, 50
 			Send, ^e 
 			if (Toggle = 0)
 			{

@@ -1,3 +1,4 @@
+;note - using this script implies that you have read the disclaimer in the readme.md file located at https://github.com/dlipchenko/AHKScripts/tree/master/Warframe and agree with the conditions I've written there
 baseSpeedValue = 1900
 delayTimer = %baseSpeedValue%
 
